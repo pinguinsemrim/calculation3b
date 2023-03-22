@@ -20,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
         int ii1 = Integer.parseInt(i1.getText().toString());
         int ii2 = Integer.parseInt(i2.getText().toString());
         int r = ii1+112;
-        Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        if(ii1==7||ii2==7){
+            Toast.makeText(this, "abobora", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        }
     }
     public void su(View v){
         int ii1 = Integer.parseInt(i1.getText().toString());
