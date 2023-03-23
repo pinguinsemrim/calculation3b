@@ -11,10 +11,13 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     EditText i1 ,i2;
+    public String mens = "erroz bip bip bug";
+    public int tatuira = 25;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         i1 = findViewById(R.id.int1);
         i2 = findViewById(R.id.int2);
     }
@@ -43,9 +46,8 @@ public class MainActivity extends AppCompatActivity {
        resp(ii1,ii2,r);
     }
     public void resp(int ii1, int ii2, int r){
-        Random rt = new Random();
-        if(ii1>=rt.nextInt(10) || ii2>=rt.nextInt(10)){
-            Toast.makeText(this, "erroz bip bip bug", Toast.LENGTH_SHORT).show();
+        if(ii1>=tatuira || ii2>=tatuira){
+            Toast.makeText(this,mens, Toast.LENGTH_SHORT).show();
         }else {
             Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
         }
