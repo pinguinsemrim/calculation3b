@@ -11,8 +11,8 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     EditText i1 ,i2;
-    public String mens = "erroz bip bip bug";
-    public int tatuira = 25;
+    String mens = "erroz bip bip bug";
+    int tatuira = 250;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         int ii1 = Integer.parseInt(i1.getText().toString());
         int ii2 = Integer.parseInt(i2.getText().toString());
         int r = ii1+112;
-        resp(ii1,ii2,r);
+
     }
     public void su(View v){
         int ii1 = Integer.parseInt(i1.getText().toString());
@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
        resp(ii1,ii2,r);
     }
     public void resp(int ii1, int ii2, int r){
-        if(ii1>=tatuira || ii2>=tatuira){
+        if(r>=tatuira){
             Toast.makeText(this,mens, Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "resposta: "+r, Toast.LENGTH_SHORT).show();
         }
     }
 
