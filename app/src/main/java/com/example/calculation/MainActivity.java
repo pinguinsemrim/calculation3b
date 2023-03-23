@@ -30,18 +30,30 @@ public class MainActivity extends AppCompatActivity {
         int ii1 = Integer.parseInt(i1.getText().toString());
         int ii2 = Integer.parseInt(i2.getText().toString());
         int r = ii1-112;
-        Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        if(ii1==45||ii2==44){
+            Toast.makeText(this, "erro bip bip bug", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        }
     }
     public void mu(View v){
         int ii1 = Integer.parseInt(i1.getText().toString());
         int ii2 = Integer.parseInt(i2.getText().toString());
         int r = ii1*112;
-        Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        if(ii1==38||ii2==28){
+            Toast.makeText(this, "bug ocorreu", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        }
     }
     public void di(View v){
         int ii1 = Integer.parseInt(i1.getText().toString());
         int ii2 = Integer.parseInt(i2.getText().toString());
         int r = ii1/112;
-        Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        if(ii1>=10||ii2>=10){
+            Toast.makeText(this, "erro erro", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, r, Toast.LENGTH_SHORT).show();
+        }
     }
 }
