@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         int ii1 = Integer.parseInt(i1.getText().toString());
         int ii2 = Integer.parseInt(i2.getText().toString());
         int r = ii1+112;
-
+        resp(ii1,ii2,r);
     }
     public void su(View v){
         int ii1 = Integer.parseInt(i1.getText().toString());
